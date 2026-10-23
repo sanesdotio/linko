@@ -1,0 +1,41 @@
+File: linko
+Type: inuse_space
+Time: 2026-10-15 14:20:40 CEST
+Duration: 29.98s, Total samples = 2926.41kB 
+Showing nodes accounting for 806.69kB, 27.57% of 2926.41kB total
+      flat  flat%   sum%        cum   cum%
+  688.56kB 23.53% 23.53%   688.56kB 23.53%  compress/flate.(*fastGen).addBlock
+  655.29kB 22.39% 45.92%   110.63kB  3.78%  compress/flate.NewWriter (inline)
+ -544.67kB 18.61% 27.31%  -544.67kB 18.61%  compress/flate.(*compressor).init
+  522.70kB 17.86% 45.17%   522.70kB 17.86%  internal/bytealg.MakeNoZero
+ -515.19kB 17.60% 27.57%  -515.19kB 17.60%  runtime/debug.ReadGCStats
+         0     0% 27.57%   110.63kB  3.78%  bufio.(*Writer).Flush
+         0     0% 27.57%   688.56kB 23.53%  compress/flate.(*Writer).Close (inline)
+         0     0% 27.57%   688.56kB 23.53%  compress/flate.(*compressor).close
+         0     0% 27.57%   688.56kB 23.53%  compress/flate.(*compressor).deflateFast
+         0     0% 27.57%   688.56kB 23.53%  compress/flate.(*fastEncL6).encode
+         0     0% 27.57%   688.56kB 23.53%  compress/gzip.(*Writer).Close
+         0     0% 27.57%   110.63kB  3.78%  compress/gzip.(*Writer).Write
+         0     0% 27.57%  -515.19kB 17.60%  github.com/prometheus/client_golang/prometheus.(*Registry).Gather.func1
+         0     0% 27.57%  -515.19kB 17.60%  github.com/prometheus/client_golang/prometheus.(*baseGoCollector).Collect
+         0     0% 27.57%  -515.19kB 17.60%  github.com/prometheus/client_golang/prometheus.(*goCollector).Collect
+         0     0% 27.57%  -515.19kB 17.60%  github.com/prometheus/client_golang/prometheus.safeCollect
+         0     0% 27.57%   799.19kB 27.31%  github.com/prometheus/client_golang/prometheus/promhttp.HandlerForTransactional.func1
+         0     0% 27.57%   799.19kB 27.31%  github.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerCounter.func1
+         0     0% 27.57%   799.19kB 27.31%  github.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerInFlight.func1
+         0     0% 27.57%   688.56kB 23.53%  github.com/prometheus/client_golang/prometheus/promhttp.negotiateEncodingWriter.func3
+         0     0% 27.57%   110.63kB  3.78%  github.com/prometheus/common/expfmt.MetricFamilyToText
+         0     0% 27.57%   110.63kB  3.78%  github.com/prometheus/common/expfmt.MetricFamilyToText.func1
+         0     0% 27.57%   110.63kB  3.78%  github.com/prometheus/common/expfmt.NewEncoder.func7
+         0     0% 27.57%   110.63kB  3.78%  github.com/prometheus/common/expfmt.encoderCloser.Encode
+         0     0% 27.57%   522.70kB 17.86%  main.(*server).handlerRedirect
+         0     0% 27.57%  1321.88kB 45.17%  main.httpRequestId.func1
+         0     0% 27.57%  1321.88kB 45.17%  main.metricsMiddleware.func1
+         0     0% 27.57%  1321.88kB 45.17%  main.requestLogger.func1.func1
+         0     0% 27.57%  1321.88kB 45.17%  net/http.(*ServeMux).ServeHTTP
+         0     0% 27.57%  1321.88kB 45.17%  net/http.(*conn).serve
+         0     0% 27.57%  1321.88kB 45.17%  net/http.HandlerFunc.ServeHTTP
+         0     0% 27.57%  1321.88kB 45.17%  net/http.serverHandler.ServeHTTP
+         0     0% 27.57%   522.70kB 17.86%  strings.(*Builder).Grow
+         0     0% 27.57%   522.70kB 17.86%  strings.(*Builder).grow
+         0     0% 27.57%   522.70kB 17.86%  strings.Repeat

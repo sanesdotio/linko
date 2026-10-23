@@ -1,0 +1,32 @@
+File: linko
+Type: cpu
+Time: 2026-10-13 14:16:48 CEST
+Duration: 30.07s, Total samples = 11.13s (37.02%)
+Showing nodes accounting for 11.08s, 99.55% of 11.13s total
+Dropped 60 nodes (cum <= 0.06s)
+      flat  flat%   sum%        cum   cum%
+    10.56s 94.88% 94.88%     10.82s 97.21%  golang.org/x/crypto/blowfish.encryptBlock
+     0.26s  2.34% 97.21%      0.26s  2.34%  runtime.asyncPreempt
+     0.12s  1.08% 98.29%      0.12s  1.08%  runtime.pthread_cond_signal
+     0.08s  0.72% 99.01%     10.90s 97.93%  golang.org/x/crypto/blowfish.ExpandKey
+     0.06s  0.54% 99.55%      0.06s  0.54%  syscall.rawsyscalln
+         0     0% 99.55%      0.10s   0.9%  _.goready.func1
+         0     0% 99.55%     10.90s 97.93%  golang.org/x/crypto/bcrypt.GenerateFromPassword
+         0     0% 99.55%     10.90s 97.93%  golang.org/x/crypto/bcrypt.bcrypt
+         0     0% 99.55%     10.90s 97.93%  golang.org/x/crypto/bcrypt.expensiveBlowfishSetup
+         0     0% 99.55%     10.90s 97.93%  golang.org/x/crypto/bcrypt.newFromPassword
+         0     0% 99.55%     10.91s 98.02%  main.(*server).handlerRedirect
+         0     0% 99.55%     10.94s 98.29%  main.httpRequestId.func1
+         0     0% 99.55%     10.91s 98.02%  main.metricsMiddleware.func1
+         0     0% 99.55%     10.94s 98.29%  main.requestLogger.func1.func1
+         0     0% 99.55%     10.91s 98.02%  net/http.(*ServeMux).ServeHTTP
+         0     0% 99.55%     10.94s 98.29%  net/http.(*conn).serve
+         0     0% 99.55%     10.94s 98.29%  net/http.HandlerFunc.ServeHTTP
+         0     0% 99.55%     10.94s 98.29%  net/http.serverHandler.ServeHTTP
+         0     0% 99.55%      0.12s  1.08%  runtime.notewakeup
+         0     0% 99.55%      0.10s   0.9%  runtime.ready
+         0     0% 99.55%      0.12s  1.08%  runtime.semawakeup
+         0     0% 99.55%      0.12s  1.08%  runtime.startm
+         0     0% 99.55%      0.13s  1.17%  runtime.systemstack
+         0     0% 99.55%      0.12s  1.08%  runtime.wakep
+         0     0% 99.55%      0.06s  0.54%  syscall.syscalln
